@@ -1,0 +1,16 @@
+  <header role="banner" class="probootstrap-header">
+    <div class="container-fluid">
+        <a routerLink="" class="probootstrap-logo">Teretana u kraju</a>
+        
+        <a routerLink="" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li *ngFor="let link of links">
+                <a routerLink="{{ link.href }}">{{ link.name }}</a>
+            </li>
+          </ul>          
+        </nav>
+    </div>
+  </header>

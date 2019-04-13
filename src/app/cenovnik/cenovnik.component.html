@@ -1,0 +1,25 @@
+<section class="probootstrap-intro probootstrap-intro-inner">
+    <div class="container">
+      <div class="row" @fade>
+        <div class="col-md-7 probootstrap-intro-text">
+          <h1 class="">Cenovnik</h1>
+          <div class="probootstrap-subtitle" >
+            <h2>teretana u kraju</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  <!-- END: section --> 
+  <main>
+    <div class="container glavno">
+        <div class="card col-md-4" *ngFor="let c of cenovnik">
+                <div class="probootstrap-program paket">
+                  <h3 align="center">{{c.naziv}}</h3><br>
+                  <p>{{c.obuhvatanje}}</p>
+                  <b>{{ c.cena | currency:'RSD '}}</b>
+                </div>
+              </div>
+      </div>
+  </main>
+ 

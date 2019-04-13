@@ -1,0 +1,52 @@
+  <section class="probootstrap-intro" style="background-image: url(assets/img/pozadina.jpg);" data-stellar-background-ratio="0.5">
+    <span><a class="probootstrap-scroll-down js-next" href="#next-section">Scroll down <i class="icon-chevron-down"></i></a></span>
+  </section>
+<main class="glavno">
+    <section id="next-section" class="probootstrap-section">
+        <div class="container">
+          <div class="row probootstrap-gutter60 mb50">
+            <div class="col-md-12">
+              <h2 class="probootstrap-heading">O teretani</h2>
+               <p>Teretana u kraju prostire se na oko 500m2 i opremljen je najsavremenijom opremom svetskog proizvodjaca marke life style sa ciljem da svojim klijentima pruzi najbolje.</p> 
+
+                <p>Upravo zato prostrane svlacionice opremili smo i saunom marke havaria, a posle dobrog treninga obezbedili smo protein bar koji je sastavni deo prijatnog ambijenta kluba.</p>
+                
+                <p>NASA MISIJA JE DA VAM OSIGURAMO USPEH !</p>
+                
+               <p>Iz tog razloga NAS TIM sastavljen je od uspesnih i licenciranih trenera i instruktora fokusiranih da nase ogromno znanje upotpunjeno dugogodisnjim iskustvom prenesu na vas i povedu vas ka vrhu!</p>
+                
+                <p>Dodjite i uverite se zasto postojimo VISE OD JEDNE DECENIJE !!!</p>
+              <p><a routerLink="/kontakt" class="btn btn-primary">Kontakt</a></p>
+            </div>
+          </div>
+  
+          <div class="row probootstrap-gutter60">
+            <div class="col-md-4 mb30">
+              <h4 class="mb30">Besplatni probni treninzi</h4>
+              <p>Probni treninzi za sve naše fitness programe su na raspolaganju potencijalnim članovima. Uverite se i sami da su programi koje mi realizujemo kvalitetni, zdravi i praktični i da je upravo to ono što Vam je zaista i potrebno!</p>
+
+              </div>
+            <div class="col-md-4 mb30">
+              <h4 class="mb30">Obaveštenja</h4>
+              <ul class="probootstrap-blog-list">
+                <li *ngFor="let novost of novosti">
+                  <a href="#">
+                    <div class="probootstrap-text">
+                        <i class="icon-bullhorn"></i>
+                      <h4>{{novost.text}}</h4>
+                      <span class="meta">
+                        {{ novost.datum | date}}
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb30">
+              <h4 class="mb30">Naša vizija</h4>
+              <p>Ljudi kojima je vežbanje ušlo u krv. Ljudi koji razumeju da nije dovoljno početi u maju, dva meseca pred more. Ljudi koji ne vežbaju samo zbog fizičkog izgleda, ali su zadovoljni fizičkim izgledom. Znamo da je nemoguće kreirati jedan savršeni svet, u kojem bi svi bili nasmejani i srećni. Zato to i ne pokušavamo. Ali, moguće je pomoći ljudima da budu jači, izdržljiviji i spremniji za sve ono što život nosi. Zato na tome radimo, svakog dana.</p>
+
+              </div>
+          </div>
+        </div>
+      </section>

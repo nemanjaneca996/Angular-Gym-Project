@@ -1,0 +1,64 @@
+<section class="probootstrap-intro probootstrap-intro-inner">
+    <div class="container">
+      <div class="row" @fade>
+        <div class="col-md-7 probootstrap-intro-text">
+          <h1 class="">Kontakt</h1>
+          <div class="probootstrap-subtitle" >
+            <h2>teretana u kraju</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  <!-- END: section -->
+  <main>
+    <section id="next-section" class="probootstrap-section">
+      <div class="container">
+        <div class="col-md-6">
+            <form [formGroup]="form" class="probootstrap-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fname">First Name</label> &nbsp;<span *ngIf="ime.invalid" class="text-danger">*Required</span>
+                    <input formControlName="ime" type="text" class="form-control" id="fname" name="fname">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lname">Last Name</label> &nbsp;<span *ngIf="prezime.invalid" class="text-danger">*Required</span>
+                    <input formControlName="prezime" type="text" class="form-control" id="lname" name="lname">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label> &nbsp;<span *ngIf="email.invalid" class="text-danger">*Required</span>
+                <input formControlName="email" type="email" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label> &nbsp;<span *ngIf="subject.invalid" class="text-danger">*Required</span>
+                <input formControlName="subject" type="text" class="form-control" id="subject" name="subject">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label> &nbsp;<span *ngIf="message.invalid" class="text-danger">*Required</span>
+                <textarea formControlName="message" cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5 col-md-push-1">
+            <h3 class="mt0">Get In Touch</h3>
+            <ul class="probootstrap-contact-info">
+              <li><i class="icon-location2"></i> <span>Zdravka Celara 123</span></li>
+              <li><i class="icon-mail"></i><span>angular@ict.edu.rs</span></li>
+              <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+            </ul>
+
+            <h3>Feedback</h3>
+            <p>Za više informacija pošaljite mail...</p>
+          </div>
+      </div>
+    </section>
+    
+  </main>

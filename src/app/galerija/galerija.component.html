@@ -1,0 +1,22 @@
+<section class="probootstrap-intro probootstrap-intro-inner">
+    <div class="container">
+      <div class="row" @fade>
+        <div class="col-md-7 probootstrap-intro-text">
+          <h1 class="">Galerija</h1>
+          <div class="probootstrap-subtitle" >
+            <h2>teretana u kraju</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  <!-- END: section -->
+  <main>
+    <div class="container">
+      <carousel>
+          <slide *ngFor="let slika of slike">
+            <img class='img-main-carousel' [src]=slika.url [alt]=slika.alt style="display: block; width: 100%;">
+          </slide>
+        </carousel>   
+      </div> 
+  </main>

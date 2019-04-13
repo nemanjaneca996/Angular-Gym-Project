@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "naziv" : "One",
+        "obuhvatanje":"1 termin teretane + kardio program",
+        "cena": 600
+    },
+    {
+        "id" : 2,
+        "naziv" : "My Time Vikend Paket",
+        "obuhvatanje":"8 termin teretane + kardio program",
+        "cena": 900
+    },
+    {
+        "id" : 3,
+        "naziv" : "Start",
+        "obuhvatanje":"12 termin teretane + kardio program",
+        "cena": 1200
+    },
+    {
+        "id" : 4,
+        "naziv" : "Extra",
+        "obuhvatanje":"30 termin teretane + kardio program",
+        "cena": 2500
+    },
+    {
+        "id" : 5,
+        "naziv" : "Pilates",
+        "obuhvatanje":"12 grupnih treninga pilatesa",
+        "cena": 1900
+    },
+    {
+        "id" : 6,
+        "naziv" : "CrossFit",
+        "obuhvatanje":"12 grupnih treninga CrossFit-a",
+        "cena": 2900
+    }
+]
